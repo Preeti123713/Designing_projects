@@ -1,0 +1,127 @@
+#container {
+    width: 800px;
+    height: 100px;
+    /* border: 1px solid grey; */
+    margin: 0 auto;
+}
+
+.heading {
+    font-weight: 300;
+    color: rgb(255, 0, 255);
+    float: left;
+}
+
+.search {
+    float: right;
+    padding: 10px;
+    background-color: green;
+    margin-top: 20px;
+}
+
+.search-button {
+    float: right;
+}
+
+.search-input {
+    float: left;
+}
+
+.topnav {
+    background-color: rgb(238, 238, 84);
+    overflow: hidden;
+    height: 100px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.Introduction {
+    background-image: linear-gradient(to top, hsl(126, 100%, 50%), #eee8ea);
+    width: 800px;
+    height: 100px;
+    color: green;
+    margin: 0 auto;
+ } 
+/* Assuming you have Font Awesome linked in your HTML */
+/* .custom-list {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .custom-list li::before {
+    content: "\f105"; /* Font Awesome icon code */
+    /* font-family: "Font Awesome 5 Free"; /* Font family for Font Awesome */
+    /* margin-right: 5px; /* Adjust spacing between icon and text */
+  /* }
+  .custom-list li a{
+    text-decoration: none;
+    color: #00ccff;
+    font-size: 25px;
+  }
+
+  .slidebar1{
+    width: fit-content;
+  padding: 50px;
+    height: fit-content;
+    border-radius:30px;
+    border: 1px  solid black;
+    float:left;
+  }
+  .sub-heading{
+    color:purple;
+    font-size: 30px;
+  }
+  .slidebars{
+    margin:0 auto;
+  } */
+
+   .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content; /* Adjusts height based on content */
+    width: fit-content; /* Adjusts width based on content */
+     padding: 20px; /* Extra space around the content */
+     background-color: #f0f0f0;
+     margin:0 auto;
+
+  } 
+  
+  .inner-box {
+    border-radius: 10px; /* Adds border radius */
+    padding: 20px; /* Extra space inside the box */
+    margin: 10px; /* Space between the two inner boxes */
+    background-color: #ccc;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px; /* Adjust space between list items */
+  }
+
+  .footer {
+    margin:10px auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(176, 237, 22);
+    color: white;
+    text-align: center;
+ }
+  
+  
