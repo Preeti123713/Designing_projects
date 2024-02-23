@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 650px;
+    width: 1000px;
+    background-color: #87cefa;
+    border-radius: 10px;
+    margin: 60px auto;
+    position: relative;
+    text-align: center;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(243, 243, 179);
+    text-align: center;
+    float: left;
+
+}
+
+.right {
+    float: right;
+    margin: 10px 5px;
+}
+
+.left {
+    margin: 10px 10px 20px;
+}
+
+.playing-area {
+    height: 400px;
+    width: 800px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.catch-fruit{
+    height: 50px;
+    width: 400px;
+    background-color: plum;
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.start{
+    height:50px;
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    position: absolute;
+    bottom: 0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: -10px;
+}
+.game-over{
+    height:50px;
+    width:100px;
+    background:linear-gradient();
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    position: absolute;
+    bottom: 0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: -10px;
+}
