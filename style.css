@@ -1,83 +1,127 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+html{
+    height: 100%;
+    background: radial-gradient(circle,#fff,#ccc);
 }
-
-.container {
-    height: 650px;
-    width: 1000px;
-    background-color: #87cefa;
-    border-radius: 10px;
-    margin: 60px auto;
-    position: relative;
-    text-align: center;
-}
-
-.button {
-    height: 50px;
-    width: 100px;
-    padding: 5px;
-    background-color: rgb(243, 243, 179);
-    text-align: center;
-    float: left;
-
-}
-
-.right {
-    float: right;
-    margin: 10px 5px;
-}
-
-.left {
-    margin: 10px 10px 20px;
-}
-
-.playing-area {
+#container{
     height: 400px;
-    width: 800px;
-    background-color: aliceblue;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    width: 550px;
+    background-color: #9DD2EA;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
 }
-.catch-fruit{
+#score{
+    background-color: #F1FF92;
+    color: #888E5E;
+    padding:11px;
+    position: absolute;
+    left:500px;
+    box-shadow: 0px 4px #9da853;
+}
+#correct{
+    position: absolute;
+    left:260px;
+    background-color: #42e252;
+    color: #fff;
+    padding: 11px;
+    display: none;
+}
+#wrong{
+    position: absolute;
+    left:250px;
+    background-color: #de401a;
+    color:white;
+    padding: 11px;
+    display: none;
+}
+#question{
+    width: 450px;
+    height:150px;
+    margin : 50px auto 10px auto;
+    background-color: #9DA0EA;
+    box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color:black;
+}
+#instruction{
+    width: 450px;
     height: 50px;
-    width: 400px;
-    background-color: plum;
-    position: absolute;
-    bottom: 10%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    padding: 5px;
+    background-color: #B481D9;
+    margin: 10px auto;
     text-align: center;
-    vertical-align: middle;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153aB;
 }
-.start{
-    height:50px;
-    width:100px;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
-    position: absolute;
-    bottom: 0%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    line-height: -10px;
+#choices{
+    width: 450px;
+    height:100px;
+    margin: 5px auto;
 }
-.game-over{
-    height:50px;
-    width:100px;
-    background:linear-gradient();
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
-    position: absolute;
-    bottom: 0%;
-    left:50%;
-    transform: translate(-50%,-50%);
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float:left;
+    margin-right: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
     text-align: center;
-    line-height: -10px;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+}
+#box4{
+    margin-right: 0;
+}
+.box:hover, #startreset:hover{
+    background-color: #9C89F6;
+    color:white;
+    box-shadow: 0px 4px #6b54d3;
+}
+.box:active, #startrest:active{
+box-shadow: 0px 0px #6b54d3;
+top:4px;
+}
+#startreset{
+    width: 85px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    padding:2px;
+}
+#timeremaining{
+    width: 152px;
+    padding: 10px;
+    position: absolute;
+    top:395px;
+    left:400px;
+    background-color: rgba(181,235,36,0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    /* visibility: hidden; */
+    display: none;
+}
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F3CA6B,#F3706C);
+    position: absolute;
+    color:white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    top:100px;
+    left:45px;
+    z-index: 2;
+    display: none;
 }
